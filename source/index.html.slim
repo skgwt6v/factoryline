@@ -1,0 +1,21 @@
+---
+title: ファクトリーライン
+---
+- @items = data.items
+.row
+  - @items.each_with_index do | val, i |
+    .col-xs-4.col-sm-3.col-md-2.col-lg-2.p-card
+      - name = val.name
+      - num = i+1
+      - image = val.image
+      - if val.noimage
+        = image_tag "no-image.png", :class => "img-fluid p-image", :alt => "#{val.name}"
+      - else
+        = image_tag "#{image}", :class => "img-fluid p-image", :alt => "#{val.name}"
+
+      .p-label
+        .p-label__number
+          span
+            | #{num}
+          | /100
+        | #{name}

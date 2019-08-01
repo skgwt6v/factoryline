@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "fontopoNEUTRAL Regular";
+  src: url("./fonts/fontopoNEUTRAL-Regular.eot?") format("eot"), url("./fonts/fontopoNEUTRAL-Regular.woff") format("woff"), url("./fonts/fontopoNEUTRAL-Regular.ttf") format("truetype"), url("./fonts/fontopoNEUTRAL-Regular.svg#fontopoNEUTRAL-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html, body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", "fontopoNEUTRAL Regular"; }
+
+.p-card {
+  margin-bottom: 2em; }
+
+.p-label {
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px; }
+  .p-label__number > span {
+    font-size: 1.4em; }
+
+.p-image {
+  width: 100%;
+  border: 1px solid #000; }
+
+footer {
+  font-size: 10px; }
