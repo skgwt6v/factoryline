@@ -8,6 +8,7 @@ import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
+import ItemLists from '../components/ItemLists';
 import { bold } from 'ansi-colors';
 
 
@@ -48,9 +49,7 @@ const IndexPage = () => (
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            ファクトリーラインとは
-          </h2>
+          <h2>ファクトリーラインとは</h2>
           <p>
             愛媛県内の縫製工場による衣類のプロトタイピングのコレクションです。
             <br />
@@ -85,12 +84,13 @@ const IndexPage = () => (
           <img src={pic1} alt="" />
         </div>
         <div className="content">
-          <h2>
-            かつての日本の繊維産業はすごかった。
-          </h2>
+          <h2>かつての日本の繊維産業はすごかった。</h2>
           <p>
-            日本の繊維産業は、1950 年代～ 70 年代にかけて、糸や生地を大量に生産・輸出して外貨を稼ぎ、80 年代になると国内のアパレル産業も勃興し、日本中の縫製事業者が増産に追われた。
-            バブルも重なった90 年代には国内衣料品の市場規模は15 兆円に達し、国産比率は
+            日本の繊維産業は、1950 年代～ 70
+            年代にかけて、糸や生地を大量に生産・輸出して外貨を稼ぎ、80
+            年代になると国内のアパレル産業も勃興し、日本中の縫製事業者が増産に追われた。
+            バブルも重なった90 年代には国内衣料品の市場規模は15
+            兆円に達し、国産比率は
             <HighLight>50％</HighLight>あった。
           </p>
         </div>
@@ -100,13 +100,12 @@ const IndexPage = () => (
           <img src={pic2} alt="" />
         </div>
         <div className="content">
-          <h2>
-            加速する海外移管
-          </h2>
+          <h2>加速する海外移管</h2>
           <p>
             しかし、その後はコスト低減のため、縫製工程などの海外への移管が進み、
             海外で大量生産した商品を安価で販売するSPA（製造小売り）が成長した。
-            その結果、アパレル製品の供給では、輸入の増加に歯止めがかからず、2017 年の時点で
+            その結果、アパレル製品の供給では、輸入の増加に歯止めがかからず、2017
+            年の時点で
             <HighLight>国産比率は3%</HighLight> まで低下した。
           </p>
         </div>
@@ -122,7 +121,8 @@ const IndexPage = () => (
             共同事業の確立
           </h2>
           <p>
-            このような背景の中、<HighLight>愛媛県縫製品工業組合</HighLight>でも、業界を活性化させる新たな共同事業の確立
+            このような背景の中、<HighLight>愛媛県縫製品工業組合</HighLight>
+            でも、業界を活性化させる新たな共同事業の確立
             が迫られている。組合員は、製品を作ることは非常に得意であるが、デザインや販売において
             大手アパレルメーカーとの力の差が大きい。
           </p>
@@ -142,8 +142,8 @@ const IndexPage = () => (
             組合役員を中心とした業界側委員と外部の専門家からなる専門家委員によって委員会を構成し、
             商品開発から販売までの事業について検討を行った。それぞれ規模や得意技術の異なる工場が
             個性を保ちつつ
-            <HighLight>「作る側」の視点にも立った商品開発</HighLight>をしていくプロジェクトを立ち上げるに
-            至った。
+            <HighLight>「作る側」の視点にも立った商品開発</HighLight>
+            をしていくプロジェクトを立ち上げるに 至った。
           </p>
         </div>
       </section>
@@ -162,7 +162,8 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
+          <ItemLists />
+          {/* <li className="icon fa-paper-plane">
             <h3>Arcu accumsan</h3>
             <p>
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
@@ -203,7 +204,7 @@ const IndexPage = () => (
               Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
-          </li>
+          </li> */}
         </ul>
       </div>
     </section>
