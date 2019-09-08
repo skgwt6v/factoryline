@@ -1,12 +1,16 @@
 import React from 'react';
-import ItemListsData from '../data/ItemLists'
+import Image from '../components/Image'
+import ItemListsData from '../data/ItemListsData'
 
 export default function ItemLists() {
   return (
-    ItemListsData.map(List => (
-      <li>
-        <img src={List.image} alt={List.name}/>
-      </li>
-    ))
+    ItemListsData.map((List) => {
+      const filename = `${List.image}`;
+      return (
+        <li>
+          <Image filename={filename} alt={List.name} />
+        </li>
+      );
+    })
   );
 }
