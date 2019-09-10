@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from '../components/Image'
-import ItemListsData from '../data/ItemListsData'
 
-export default function ItemLists() {
+export default function ItemLists(props) {
+  const { data } = props;
+  const [itemListData, setItemListData] = useState([])
+  
+  useEffect(() => {
+    setItemListData(data);
+  },[]);
   return (
-    ItemListsData.map((List) => {
+    itemListData.map((List) => {
       const filename = `${List.image}`;
       return (
         <li>
-          <Image filename={filename} alt={List.name} />
+          { List.noimage ? (
+              <Image filename="no-image" alt={List.name} />
+            ) : (
+              <Image filename={filename} alt={List.name} />
+            )
+          }
         </li>
       );
     })
   );
 }
+  
