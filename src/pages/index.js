@@ -84,7 +84,7 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style5">
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={pic1} alt="pic1" />
         </div>
         <div className="content">
           <h2>かつての日本の繊維産業はすごかった。</h2>
@@ -100,7 +100,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img src={pic2} alt="pic2" />
         </div>
         <div className="content">
           <h2>加速する海外移管</h2>
@@ -115,7 +115,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img src={pic3} alt="pic3" />
         </div>
         <div className="content">
           <h2>
@@ -133,7 +133,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic4} alt="" />
+          <img src={pic4} alt="pic4" />
         </div>
         <div className="content">
           <h2>
