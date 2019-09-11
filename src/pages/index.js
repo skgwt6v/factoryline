@@ -1,28 +1,33 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import { Link } from 'gatsby';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+// import pic1 from '../assets/images/pic01.jpg';
+// import pic2 from '../assets/images/pic02.jpg';
+// import pic3 from '../assets/images/pic03.jpg';
+import logo from '../assets/images/logo.svg';
 import config from '../../config';
 import ItemLists from '../components/ItemLists';
 import ItemListsData from '../data/ItemListsData';
-import { bold } from 'ansi-colors';
+
+const pic1 =
+  'https://as1.ftcdn.net/jpg/01/90/01/48/500_F_190014835_PQrtqMwT1NgS4OdZpEldCJNqmAbm89gO.jpg';
+const pic2 =
+  'https://as1.ftcdn.net/jpg/01/18/28/98/500_F_118289830_TtpmKAKvnXCt5bRuZsa4RAxY8bv1s1EC.jpg';
+const pic3 =
+  'https://as2.ftcdn.net/jpg/01/69/37/27/500_F_169372773_BTdlcXfz6Z1mUnK69ZbHarmh7AkJcP8d.jpg';
+const pic4 =
+  'https://as2.ftcdn.net/jpg/02/46/37/99/500_F_246379952_4KH6fHL35fvWr3hFVGymVMmSx062vesp.jpg';
 
 
 const HighLight = ({children}) => {
-  return (
-    <span style={strong}>{children}</span>
+  return ( 
+    <span className="highlight">{children}</span>
   )
 }
-
-const strong = {
-  color: "yellow",
-  fontWeight: "bold"
-};
 
 const IndexPage = () => (
   <Layout>
@@ -33,9 +38,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
+              <div className="button primary fit">愛媛県縫製品工業組合</div>
             </Scroll>
           </li>
         </ul>
@@ -56,7 +59,6 @@ const IndexPage = () => (
             <br />
             素材を地域で開発したり、テクノロジーを部分的に導入することで
             <br />
-            大きな投資のいらない小さなイノベーションを目指しています。
           </p>
         </header>
         {/* <ul className="icons major">
@@ -131,7 +133,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img src={pic4} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -153,17 +155,22 @@ const IndexPage = () => (
     <section id="three" className="wrapper style5 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>PRODUCTS</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            愛媛県内の縫製工場による衣類のプロトタイピングのコレクションです。
           </p>
         </header>
-        <ul className="features">
-          <ItemLists data={ItemListsData} />
+        <div className="box">
+          <div className="row gtr-50 gtr-uniform">
+            <ItemLists data={ItemListsData} columns={4} maxLength={9} />
+          </div>
+        </div>
+        <ul className="actions stacked">
+          <li>
+            <div className="button fit">
+              <Link to="/Products">商品一覧へ</Link>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -171,22 +178,23 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>ファクトリーラインとは</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            愛媛県内の縫製工場による衣類のプロトタイピングのコレクションです。
+            素材を地域で開発したり、テクノロジーを部分的に導入することで
+            大きな投資のいらない小さなイノベーションを目指しています。
           </p>
+          <ul className="actions stacked">
+            <li>
+              <a href="/#" className="button">
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
+            <img src={logo} />
           </li>
         </ul>
       </div>

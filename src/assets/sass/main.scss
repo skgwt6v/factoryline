@@ -4,8 +4,9 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
+@import 'libs/awsome-image-hover';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
 /*
 	Spectral by HTML5 UP
@@ -955,16 +956,16 @@
 		}
 
 		&.primary {
-			background-color: _palette(accent6, bg);
+			background-color: _palette(bg);
 			box-shadow: none !important;
-			color: _palette(accent6, fg-bold) !important;
+			color: _palette(fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent6, bg), 5) !important;
+				background-color: lighten(_palette(bg), 5) !important;
 			}
 
 			&:active {
-				background-color: darken(_palette(accent6, bg), 5) !important;
+				background-color: darken(_palette(bg), 5) !important;
 			}
 		}
 
@@ -1894,6 +1895,22 @@
 		@include breakpoint('<=small') {
 			@include padding(3em, 2em);
 		}
+	}
+
+	.highlight {
+		font-weight: bold;
+		position: relative;
+		display: inline-block;
+	
+	  &:after {
+			content: ' ';
+			width: 100%;
+			height: 2px;
+			background: _palette(bg);
+			position: absolute;
+			left: 0;
+			bottom: 2px;
+	 	}
 	}
 
 /* Landing */
