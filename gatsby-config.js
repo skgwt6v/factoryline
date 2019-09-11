@@ -1,4 +1,5 @@
 const config = require('./config');
+require('dotenv').config();
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -33,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'factoryline-website',
+        bucketName: process.env.S3_BUCKET_NAME,
       },
     },
   ],

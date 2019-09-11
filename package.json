@@ -11,6 +11,7 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
+    "dotenv": "^8.1.0",
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -32,7 +33,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "npx -n \"-r dotenv/config\" gatsby-plugin-s3 deploy",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write '**/*.js'",
