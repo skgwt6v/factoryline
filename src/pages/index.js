@@ -194,7 +194,7 @@ const IndexPage = () => (
         </header>
         <ul className="actions stacked">
           <li>
-            <img src={logo} />
+            <img src={logo} alt="logo" />
           </li>
         </ul>
       </div>
