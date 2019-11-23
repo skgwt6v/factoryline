@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import ItemLists from '../components/ItemLists';
+import ProductsLists from '../components/ProductsLists';
 import ItemListsData from '../data/ItemListsData';
 
 
@@ -18,7 +18,7 @@ const IndexPage = () => (
         <div className="inner">
           <div className="box">
             <div className="row gtr-50 gtr-uniform">
-              <ItemLists data={ItemListsData} columns={4} />
+              <ProductsLists data={ItemListsData}/>
             </div>
           </div>
         </div>

@@ -162,7 +162,7 @@ const IndexPage = () => (
         </header>
         <div className="box">
           <div className="row gtr-50 gtr-uniform">
-            <ItemLists data={ItemListsData} columns={4} maxLength={9} />
+            <ItemLists data={ItemListsData}/>
           </div>
         </div>
         <ul className="actions stacked">
