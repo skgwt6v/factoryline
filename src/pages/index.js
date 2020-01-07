@@ -8,19 +8,18 @@ import Scroll from '../components/Scroll';
 // import pic1 from '../assets/images/pic01.jpg';
 // import pic2 from '../assets/images/pic02.jpg';
 // import pic3 from '../assets/images/pic03.jpg';
+import transparent from '../assets/images/transparent.png';
 import logo from '../assets/images/logo.svg';
 import config from '../../config';
 import ItemLists from '../components/ItemLists';
 import ItemListsData from '../data/ItemListsData';
 
-const pic1 =
-  'https://as1.ftcdn.net/jpg/01/90/01/48/500_F_190014835_PQrtqMwT1NgS4OdZpEldCJNqmAbm89gO.jpg';
-const pic2 =
-  'https://as1.ftcdn.net/jpg/01/18/28/98/500_F_118289830_TtpmKAKvnXCt5bRuZsa4RAxY8bv1s1EC.jpg';
-const pic3 =
-  'https://as2.ftcdn.net/jpg/01/69/37/27/500_F_169372773_BTdlcXfz6Z1mUnK69ZbHarmh7AkJcP8d.jpg';
-const pic4 =
-  'https://as2.ftcdn.net/jpg/02/46/37/99/500_F_246379952_4KH6fHL35fvWr3hFVGymVMmSx062vesp.jpg';
+import PhotoGallery from '../components/PhotoGallery';
+
+const pic1 = transparent;
+const pic2 = transparent;
+const pic3 = transparent;
+const pic4 = transparent;
 
 
 const HighLight = ({children}) => {
@@ -162,7 +161,7 @@ const IndexPage = () => (
         </header>
         <div className="box">
           <div className="row gtr-50 gtr-uniform">
-            <ItemLists data={ItemListsData}/>
+            <ItemLists data={ItemListsData} />
           </div>
         </div>
         <ul className="actions stacked">
@@ -172,6 +171,18 @@ const IndexPage = () => (
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="three" className="wrapper style5 special">
+      <div className="inner">
+        <header className="major">
+          <h2>Gallery</h2>
+        </header>
+        <div className="box"><PhotoGallery />
+          <div className="row gtr-50 gtr-uniform">
+            
+          </div>
+        </div>
       </div>
     </section>
 
@@ -199,6 +210,7 @@ const IndexPage = () => (
         </ul>
       </div>
     </section>
+    
   </Layout>
 );
 
