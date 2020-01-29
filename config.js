@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'FACTORY LINE100 | 愛媛県縫製工業組合', // <title>
-  manifestName: 'SFACTORY LINE100',
+  manifestName: 'FACTORY LINE100',
   manifestShortName: 'FACTORY LINE100', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',

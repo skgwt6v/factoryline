@@ -5,9 +5,6 @@ import { Link } from 'gatsby';
 
 import Scroll from '../components/Scroll';
 
-// import pic1 from '../assets/images/pic01.jpg';
-// import pic2 from '../assets/images/pic02.jpg';
-// import pic3 from '../assets/images/pic03.jpg';
 import transparent from '../assets/images/transparent.png';
 import logo from '../assets/images/logo.svg';
 import config from '../../config';
@@ -16,10 +13,10 @@ import ItemListsData from '../data/ItemListsData';
 
 import PhotoGallery from '../components/PhotoGallery';
 
-const pic1 = transparent;
-const pic2 = transparent;
-const pic3 = transparent;
-const pic4 = transparent;
+import pic1 from '../assets/images/web_img_01.png';
+import pic2 from '../assets/images/web_img_02.png';
+import pic3 from '../assets/images/web_img_03.png';
+import pic4 from '../assets/images/web_img_04.png';
 
 
 const HighLight = ({children}) => {
@@ -52,12 +49,13 @@ const IndexPage = () => (
     <section id="one" className="wrapper style5 special">
       <div className="inner">
         <header className="major">
-          <h2>ファクトリーラインとは</h2>
+          <h2>「FACTORY LINE」とは</h2>
           <p>
-            愛媛県内の縫製工場による衣類のプロトタイピングのコレクションです。
+            愛媛県各所に広がって点在する縫製工場が、それぞれの得意技術を生かし衣服のプロトタイピングをするプロジェクトです。
             <br />
-            素材を地域で開発したり、テクノロジーを部分的に導入することで
+            ニューメソドロジーの概念のもと、時には『作る側』の視点にも立ちながらサンプルを作成し、
             <br />
+              その後の販売に繋げていく事を目的としています。
           </p>
         </header>
         {/* <ul className="icons major">
@@ -82,7 +80,7 @@ const IndexPage = () => (
 
     <section id="two" className="wrapper alt style5">
       <section className="spotlight">
-        <div className="image">
+        <div className="content image">
           <img src={pic1} alt="pic1" />
         </div>
         <div className="content">
@@ -98,7 +96,7 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
+        <div className="content image">
           <img src={pic2} alt="pic2" />
         </div>
         <div className="content">
@@ -113,7 +111,7 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
+        <div className="content image">
           <img src={pic3} alt="pic3" />
         </div>
         <div className="content">
@@ -131,7 +129,7 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
+        <div className="content image">
           <img src={pic4} alt="pic4" />
         </div>
         <div className="content">
@@ -189,19 +187,19 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>ファクトリーラインとは</h2>
+          <h2>「FACTORY LINE」とは</h2>
           <p>
             愛媛県内の縫製工場による衣類のプロトタイピングのコレクションです。
             素材を地域で開発したり、テクノロジーを部分的に導入することで
             大きな投資のいらない小さなイノベーションを目指しています。
           </p>
-          <ul className="actions stacked">
-            <li>
-              <a href="/#" className="button">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+          {/*<ul className="actions stacked">*/}
+          {/*  <li>*/}
+          {/*    <a href="/#" className="button">*/}
+          {/*      Contact Us*/}
+          {/*    </a>*/}
+          {/*  </li>*/}
+          {/*</ul>*/}
         </header>
         <ul className="actions stacked">
           <li>
